@@ -31,10 +31,6 @@
   --color-accent-900: oklch(0.28 0.16 45);
   --color-accent-950: oklch(0.16 0.08 45);
 
-  /* Main colors */
-
-  /* Sematic colors */
-
   /* Success colors */
 
   --color-success-50: oklch(0.98 0.02 145);
@@ -54,8 +50,6 @@
   --color-danger-600: oklch(0.55 0.18 25);
   --color-danger-700: oklch(0.45 0.16 25);
 
-  /* Neutral colors */
-
   /* Neutral Colors with Custom Names */
   --color-surface-50: oklch(0.99 0.001 280);
   --color-surface-100: oklch(0.96 0.002 280);
@@ -71,6 +65,7 @@
 
   /* custom text Sizes */
 
+  --text-xsm: 12px;
   --text-sm: 14px;
   --text-base: 24px;
   --text-headline: 32px;

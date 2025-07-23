@@ -1,4 +1,4 @@
-import { MapPin } from "lucide-react";
+import { MapPin, Mail, PhoneCall } from "lucide-react";
 import Input from "./Input";
 import Button from "./Button";
 import { useState } from "react";
@@ -24,8 +24,6 @@ const Contactus = () => {
     event.preventDefault();
 
     const formErrors = {};
-
-    // VALIDATION
 
     if (!userData.name.trim()) {
       formErrors.name = "Name is required";
@@ -56,36 +54,48 @@ const Contactus = () => {
   };
   return (
     <section>
-      <div>
-        <div>
-          <p>Contact us</p>
-          <h1>Say Hello</h1>
-          <div>
-            <MapPin className="h-6 w-6" />
-            <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col sm:flex-col md:flex-row justify-around items-start">
+        <div className="flex flex-col items-start justify-start space-y-8">
+          <p className="text-sm text-teal-400">Contact us</p>
+          <h1 className="text-3xl text-black">Say Hello</h1>
+          <div className="flex flex-row justify-center items-center gap-2">
+            <div className=" border-2 border-dotted rounded-full p-2">
+              <div className="bg-teal-500 p-2 rounded-full">
+                <MapPin className="h-5 w-5 text-white" />
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-start">
               <h3>Address</h3>
               <p>Location KG 9 Ave, Kigali</p>
             </div>
           </div>
-          <div>
-            <MapPin className="h-6 w-6" />
-            <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-row justify-center items-center gap-2">
+            <div className=" border-2 border-dotted rounded-full p-2">
+              <div className="bg-teal-500 p-2 rounded-full">
+                <Mail className="h-5 w-5 text-white" />
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-start">
               <h3>Address</h3>
               <p>Location KG 9 Ave, Kigali</p>
             </div>
           </div>
-          <div>
-            <MapPin className="h-6 w-6" />
-            <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-row justify-center items-center gap-2">
+            <div className=" border-2 border-dotted rounded-full p-2">
+              <div className="bg-teal-500 p-2 rounded-full">
+                <PhoneCall className="h-5 w-5 text-white" />
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-start">
               <h3>Address</h3>
               <p>Location KG 9 Ave, Kigali</p>
             </div>
           </div>
         </div>
-        <div>
-          <p>Have Question ?</p>
-          <h1>Send a Message</h1>
-          <form action="#" onSubmit={handleSubmit}>
+        <div className="space-y-2">
+          <p className="text-sm text-teal-400">Have Question ?</p>
+          <h1 className="text-3xl text-black">Send a Message</h1>
+          <form action="#" onSubmit={handleSubmit} className="space-y-3">
             <Input
               label={" Name"}
               value={userData.name}
@@ -130,7 +140,7 @@ const Contactus = () => {
             {errors.message && (
               <p className="text-sm text-red-600">{errors.message}</p>
             )}
-            <Button label={"Send Message"} type="submit" className="w-16" />
+            <Button label={"Send Message"} type="submit" />
           </form>
         </div>
       </div>

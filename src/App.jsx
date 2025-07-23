@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Space from "./pages/Space";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import NoPage from "./pages/NoPage";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="space" element={<Space />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
       <Footer />

@@ -1,5 +1,11 @@
+import Contactus from "../components/Contactus";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div className="font-poppins">
+      <Contactus />
+    </div>
+  );
 };
 
 export default Contact;

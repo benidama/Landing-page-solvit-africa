@@ -3,34 +3,34 @@ import choose from "../images/choose.jpg";
 
 const benefits = [
   {
-    img: <Layers size={48} color="#4A90E2" />,
+    img: <Layers size={48} />,
     title: "Create Space",
     description: "Lorem ipsum dolor sit amet on consectetur adipiscing elit",
   },
   {
-    img: <Layers size={48} color="#4A90E2" />,
+    img: <Layers size={48} />,
     title: "High Speed WIFI",
     description: "Lorem ipsum dolor sit amet on consectetur adipiscing elit",
   },
   {
-    img: <Layers size={48} color="#4A90E2" />,
+    img: <Layers size={48} />,
     title: "Parking Area",
     description: "Lorem ipsum dolor sit amet on consectetur adipiscing elit",
   },
 ];
 const benefitus = [
   {
-    img: <Layers size={48} color="#4A90E2" />,
+    img: <Layers size={48} />,
     head: "24/7 Access",
     message: "Lorem ipsum dolor sit amet on consectetur adipiscing elit",
   },
   {
-    img: <Layers size={48} color="#4A90E2" />,
+    img: <Layers size={48} />,
     head: "Great Location",
     message: "Lorem ipsum dolor sit amet on consectetur adipiscing elit",
   },
   {
-    img: <Layers size={48} color="#4A90E2" />,
+    img: <Layers size={48} />,
     head: "Outdoor space",
     message: "Lorem ipsum dolor sit amet on consectetur adipiscing elit",
   },
@@ -45,7 +45,7 @@ const Choose = () => (
         workgame andjoin thewinning teamtoday.
       </p>
     </div>
-    <div className="flex flex-row justify-center items-start gap-10">
+    <div className="flex flex-col sm:flex-col md:flex-row justify-center items-start gap-10">
       <div className="flex flex-col  gap-6 ">
         {benefits.map(({ img, title, description }) => (
           <div
@@ -55,7 +55,7 @@ const Choose = () => (
             <div className="bg-teal-600 rounded-full p-2">
               <span className="mb-4">{img}</span>
             </div>
-            <h3 className="text-xl font-semibold text-black mb-2">{title}</h3>
+            <h3 className="text-lg font-semibold text-black mb-2">{title}</h3>
             <p className="text-gray-600 text-center max-w-[220px]">
               {description}
             </p>
@@ -65,7 +65,7 @@ const Choose = () => (
       <img
         src={choose}
         alt="Bridge cross the ocean"
-        className="w-[390px] h-[635px] object-cover"
+        className="w-[390px] h-[715px] object-cover"
       />
       <div className="flex flex-col  gap-6">
         {benefitus.map(({ img, head, message }) => (

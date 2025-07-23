@@ -10,7 +10,7 @@ const Hero = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <p className="text-white text-lg mb-2">The Best WorkSpace in Kigali</p>
-        <h1 className="text-3xl md:text-5xl font-bold text-white">
+        <h1 className="text-headline md:text-5xl font-bold text-white">
           <span className="text-teal-400">Professional</span>, Creative, <br />
           Flexible, Scalable <span className="text-teal-400">Workspace</span>
         </h1>

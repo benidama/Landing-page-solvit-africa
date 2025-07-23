@@ -27,7 +27,7 @@ const services = [
 const Services = () => (
   <div className="container mx-auto px-4 py-12">
     <div className="flex flex-col justify-center items-center text-center mb-4 gap-1">
-      <h1 className="text-3xl max-w-96 ">
+      <h1 className="text-base max-w-96 ">
         We offer creative working environments
       </h1>
       <h4 className="text-sm  max-w-96">

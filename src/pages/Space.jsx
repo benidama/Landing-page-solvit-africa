@@ -1,5 +1,11 @@
+import Services from "../components/Services";
+
 const Space = () => {
-  return <div>Space</div>;
+  return (
+    <div className="font-poppins">
+      <Services />
+    </div>
+  );
 };
 
 export default Space;

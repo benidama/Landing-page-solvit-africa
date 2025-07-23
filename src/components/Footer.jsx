@@ -1,14 +1,22 @@
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  LayoutDashboard,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
-const BusinessCafeFooter = () => {
+const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <footer className="bg-white py-12 px-6 border-t ">
+    <footer className="bg-white py-12 px-6 ">
       <hr className="border-t border-teal-500  pt-6" />
       <div className="max-w-6xl mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
+              <LayoutDashboard className="w-8 h-8  text-teal-400" />
               <h2 className="text-xl font-bold text-gray-800">
                 Business <span className="text-teal-500">Cafe</span>
               </h2>
@@ -48,7 +56,10 @@ const BusinessCafeFooter = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-gray-800 border-b border-black">
+              Quick Links
+            </h3>
+
             <ul className="space-y-2">
               <li>
                 <Link
@@ -86,7 +97,7 @@ const BusinessCafeFooter = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800">
+            <h3 className="text-lg font-semibold text-gray-800 border-b border-black">
               Contact Info
             </h3>
             <div className="space-y-3 text-sm">
@@ -117,7 +128,7 @@ const BusinessCafeFooter = () => {
         <div className="border-t border-teal-500 pt-6">
           <p className="text-center">
             <span className="text-gray-950 text-sm">
-              Copyright © 2023 Business Coffee All rights reserved.
+              Copyright © {year} Business Coffee All rights reserved.
             </span>
           </p>
         </div>
@@ -126,4 +137,4 @@ const BusinessCafeFooter = () => {
   );
 };
 
-export default BusinessCafeFooter;
+export default Footer;

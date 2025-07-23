@@ -5,7 +5,7 @@ const Aboutus = () => {
     <section className="flex flex-col md:flex-row items-start gap-8 justify-center ">
       <div className="pt-10">
         <p className="text-sm uppercase text-teal-600">About us</p>
-        <h2 className="text-2xl font-medium max-w-[405px]">
+        <h2 className="text-base font-medium max-w-[405px]">
           We offer creative working environments that suit your business
         </h2>
       </div>
