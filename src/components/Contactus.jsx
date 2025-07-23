@@ -135,8 +135,10 @@ const Contactus = () => {
               onChange={handleChange}
               placeholder={" Message"}
               name={"message"}
+              multiline
               variant={errors.firstName ? "danger" : "default"}
             />
+
             {errors.message && (
               <p className="text-sm text-red-600">{errors.message}</p>
             )}

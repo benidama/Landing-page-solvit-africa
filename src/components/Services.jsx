@@ -27,7 +27,7 @@ const services = [
 const Services = () => (
   <div className="container mx-auto px-4 py-12">
     <div className="flex flex-col justify-center items-center text-center mb-4 gap-1">
-      <h1 className="text-base max-w-96 ">
+      <h1 className="text-base max-w-96 leading-6 font-bold">
         We offer creative working environments
       </h1>
       <h4 className="text-sm  max-w-96">
@@ -46,7 +46,7 @@ const Services = () => (
             <h3 className="text-xl font-semibold text-teal-600 mb-2 pl-50px">
               {title}
             </h3>
-            <hr className="border-[1px] border-teal-400 text-center border-solid mx-4 w-14" />
+            <hr className="border-[1px] border-teal-500 text-center border-solid mx-4 w-14" />
             <p className="text-gray-600 flex-1 max-w-80">{description}</p>
             <Link
               to="#"

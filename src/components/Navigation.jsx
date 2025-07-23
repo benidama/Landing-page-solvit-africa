@@ -15,10 +15,10 @@ const Navigation = () => {
     <>
       <nav className="bg-white shadow-md px-6 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-1">
-          <LayoutDashboard className="w-8 h-8 text-teal-400" />
+          <LayoutDashboard className="w-8 h-8 text-palette-300" />
           <p className="text-xl">
-            Business
-            <span className="text-xl font-semibold text-teal-400"> Cafe</span>
+            Business{" "}
+            <span className="text-xl font-semibold text-palette-400">Cafe</span>
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const Navigation = () => {
                 to={to}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-green-600 border-b-2 border-green-600 text-xl"
+                    ? "text-palette-500 border-b-2 border-palette-500 text-xl"
                     : "text-black hover:text-gray-700 text-xl"
                 }
               >
@@ -61,7 +61,7 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-green-600 text-xl"
+                    ? "text-palette-500 text-xl"
                     : "text-black hover:text-gray-700 text-xl"
                 }
               >

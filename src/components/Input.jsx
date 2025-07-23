@@ -10,6 +10,7 @@ const Input = ({
   onChange,
   placeholder,
   className,
+  multiline = false,
   variant = "default",
 }) => {
   return (
@@ -19,15 +20,25 @@ const Input = ({
           {label}
         </label>
       )}
-
-      <input
-        type={type}
-        name={name}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        className={`px-4 py-2 rounded-md border-2 ${variantClasses[variant]} ${className}`}
-      />
+      {multiline ? (
+        <textarea
+          name={name}
+          value={value}
+          onChange={onChange}
+          placeholder={placeholder}
+          rows={4}
+          className={`px-4 py-1 w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
+        />
+      ) : (
+        <input
+          type={type}
+          name={name}
+          value={value}
+          onChange={onChange}
+          placeholder={placeholder}
+          className={`px-4 py-1 w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
+        />
+      )}
     </div>
   );
 };
