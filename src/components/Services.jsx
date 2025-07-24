@@ -46,11 +46,11 @@ const Services = () => (
             <h3 className="text-xl font-semibold text-teal-600 mb-2 pl-50px">
               {title}
             </h3>
-            <hr className="border-[1px] border-teal-500 text-center border-solid mx-4 w-14" />
+            <hr className="border-[1px] border-palette-700 text-center border-solid mx-4 w-14" />
             <p className="text-gray-600 flex-1 max-w-80">{description}</p>
             <Link
               to="#"
-              className="mt-4 text-teal-600 font-medium hover:underline"
+              className="mt-4 text-palette-600 font-medium hover:underline"
             >
               Learn More
             </Link>

@@ -1,5 +1,5 @@
 const variantClasses = {
-  default: "border-gray-300 focus:ring-primaryColor-700",
+  default: "border-palette-300 focus:ring-palette-300",
   danger: "border-red-500 focus:ring-red-500",
 };
 const Input = ({
@@ -27,7 +27,7 @@ const Input = ({
           onChange={onChange}
           placeholder={placeholder}
           rows={4}
-          className={`px-4 py-1 w-xs sm:w-xs md:w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
+          className={`px-4 py-1 w-full sm:w-full md:w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
         />
       ) : (
         <input
@@ -36,7 +36,7 @@ const Input = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={`px-4 py-1 w-xs sm:w-xs w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
+          className={`px-4 py-1 w-full sm:w-full md:w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
         />
       )}
     </div>

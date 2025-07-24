@@ -1,12 +1,24 @@
-# React + Vite
+# This is landing page of my WorkSpace project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
 
-Currently, two official plugins are available:
+- Fully responsive design — Looks great on mobile, tablet, and desktop.
+- **Content sections**:
+  - Hero banner with headline, subtitle, and call-to-action buttons
+  - “About Us” introduction
+  - Services highlights: Renting Offices, Private event Space, Coffee Shop
+  - Contact form
+  - Footer with social links and contact info
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- CSS-in-JS or Utility CSS — styled-components or Tailwind
+- React Router — For multi-page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **Clone the repo**
+
+```bash
+git clone https://github.com/benidama/Landing-page-solvit-africa.git
+cd Landing-page-solvit-africa
+```

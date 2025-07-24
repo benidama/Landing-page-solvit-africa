@@ -9,7 +9,7 @@ const Aboutus = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center gap-8 justify-center">
         <div className="pt-10">
-          <p className="text-sm uppercase text-teal-600">About us</p>
+          <p className="text-sm  text-palette-300">About us</p>
           <h2 className="text-base font-medium max-w-[405px]">
             We offer creative working environments that suit your business
           </h2>
@@ -24,7 +24,7 @@ const Aboutus = () => {
             pellentesque tristique primis cum tincidunt placerat maecenas, velit
             metus fermentum eget
           </p>
-          <Link to="/about" className="text-teal-600 hover:underline">
+          <Link to="/about" className="text-palette-300 hover:underline">
             More About Us
           </Link>
         </div>

@@ -11,7 +11,7 @@ const Mission = () => (
 
     <div className="relative z-4 flex flex-col justify-center items-center w-screen py-16 px-4 text-center text-white">
       <h1 className="text-headline md:text-5xl font-bold">
-        <span className="text-teal-500">Our</span> mission
+        <span className="text-palette-400">Our</span> mission
       </h1>
       <p className="text-gray-100 max-w-3xl mt-4 md:text-xsm sm:text-sm">
         Lorem ipsum dolor sit amet consectetur adipiscing elit, mattis blandit
@@ -20,7 +20,7 @@ const Mission = () => (
         ultrices fermentum libero pretium convallis pharetra
       </p>
       <div className="flex flex-row pt-5 pb-6 md:mt-6 md:pt-0 md:pb-0">
-        <hr className="border-[1px] border-teal-400 mx-4 w-14" />
+        <hr className="border-[1px] border-palette-300 mx-4 w-14" />
         <hr className="border-[1px] border-white mx-4 w-14" />
       </div>
     </div>

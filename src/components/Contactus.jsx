@@ -17,8 +17,6 @@ const Contactus = () => {
       ...prev,
       [event.target.name]: event.target.value,
     }));
-
-    console.log(userData);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -39,7 +37,6 @@ const Contactus = () => {
       formErrors.message = "Message must be filled";
     }
 
-    console.log("Errors that is being returned", formErrors);
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
     } else {
@@ -54,14 +51,14 @@ const Contactus = () => {
   };
   return (
     <section>
-      <div className="flex flex-col sm:flex-col md:flex-row justify-around items-start">
+      <div className="flex flex-col sm:flex-col md:flex-row justify-around items-center md:items-start">
         <div className="flex flex-col items-start justify-start space-y-8">
-          <p className="text-sm text-teal-400">Contact us</p>
+          <p className="text-sm text-palette-300">Contact us</p>
           <h1 className="text-3xl text-black">Say Hello</h1>
           <div className="flex flex-row justify-center items-center gap-2">
-            <div className=" border-2 border-dotted rounded-full p-2">
-              <div className="bg-teal-500 p-2 rounded-full">
-                <MapPin className="h-5 w-5 text-white" />
+            <div className=" border-2 border-dotted rounded-full p-1">
+              <div className="bg-palette-500 p-2 rounded-full">
+                <MapPin className="h-8 w-8 text-white" />
               </div>
             </div>
             <div className="flex flex-col justify-center items-start">
@@ -70,9 +67,9 @@ const Contactus = () => {
             </div>
           </div>
           <div className="flex flex-row justify-center items-center gap-2">
-            <div className=" border-2 border-dotted rounded-full p-2">
-              <div className="bg-teal-500 p-2 rounded-full">
-                <Mail className="h-5 w-5 text-white" />
+            <div className=" border-2 border-dotted rounded-full p-1">
+              <div className="bg-palette-500 p-2 rounded-full">
+                <Mail className="h-8 w-8 text-white" />
               </div>
             </div>
             <div className="flex flex-col justify-center items-start">
@@ -81,9 +78,9 @@ const Contactus = () => {
             </div>
           </div>
           <div className="flex flex-row justify-center items-center gap-2">
-            <div className=" border-2 border-dotted rounded-full p-2">
-              <div className="bg-teal-500 p-2 rounded-full">
-                <PhoneCall className="h-5 w-5 text-white" />
+            <div className=" border-2 border-dotted rounded-full p-1">
+              <div className="bg-palette-500 p-2 rounded-full">
+                <PhoneCall className="h-8 w-8 text-white" />
               </div>
             </div>
             <div className="flex flex-col justify-center items-start">
@@ -93,7 +90,7 @@ const Contactus = () => {
           </div>
         </div>
         <div className="space-y-2">
-          <p className="text-sm text-teal-400">Have Question ?</p>
+          <p className="text-sm text-palette-300">Have Question ?</p>
           <h1 className="text-3xl text-black">Send a Message</h1>
           <form action="#" onSubmit={handleSubmit} className="space-y-3">
             <Input

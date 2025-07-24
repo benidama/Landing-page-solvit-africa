@@ -1,6 +1,5 @@
 const variantClasses = {
-  primary: "bg-success-600 text-white hover:bg-blue",
-  default: "h-4 w-4 rounded-full",
+  primary: "bg-palette-500 text-white hover:bg-blue",
 };
 const Button = ({
   label,

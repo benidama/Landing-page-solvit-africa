@@ -38,21 +38,21 @@ const benefitus = [
 const Choose = () => (
   <section className="flex flex-col justify-around items-center mt-10">
     <div className="flex flex-col justify-center items-center my-5">
-      <p className="text-teal-300">Benefits</p>
+      <p className="text-palette-300">Benefits</p>
       <h2 className="text-black text-3xl">Why choose us</h2>
       <p className="max-w-[490px] text-center">
         Unleash your productivity our premium workspace solutions. Elevate your
         workgame andjoin thewinning teamtoday.
       </p>
     </div>
-    <div className="flex flex-col sm:flex-col md:flex-row justify-center items-start gap-10">
-      <div className="flex flex-col  gap-6 ">
+    <div className="flex flex-col sm:flex-col md:flex-row justify-center items-center md:items-start gap-10">
+      <div className="flex flex-col justify-center items-center gap-6 ">
         {benefits.map(({ img, title, description }) => (
           <div
             key={title}
-            className="bg-teal-50 rounded-lg shadow-md flex flex-col items-center p-6"
+            className="bg-palette-50 rounded-lg shadow-md flex flex-col justify-center items-center p-6"
           >
-            <div className="bg-teal-600 rounded-full p-2">
+            <div className="bg-palette-500 rounded-full p-2">
               <span className="mb-4">{img}</span>
             </div>
             <h3 className="text-lg font-semibold text-black mb-2 mt-2">
@@ -73,9 +73,9 @@ const Choose = () => (
         {benefitus.map(({ img, head, message }) => (
           <div
             key={head}
-            className="bg-teal-50 rounded-lg shadow-md flex flex-col items-center p-6"
+            className="bg-palette-50 rounded-lg shadow-md flex flex-col items-center p-6"
           >
-            <div className="bg-teal-600 rounded-full p-2">
+            <div className="bg-palette-500 rounded-full p-2">
               <span className=" mb-4">{img}</span>
             </div>
             <h3 className="text-xl font-semibold text-black mb-2 mt-2">
