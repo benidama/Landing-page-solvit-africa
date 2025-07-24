@@ -27,7 +27,7 @@ const Input = ({
           onChange={onChange}
           placeholder={placeholder}
           rows={4}
-          className={`px-4 py-1 w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
+          className={`px-4 py-1 w-xs sm:w-xs md:w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
         />
       ) : (
         <input
@@ -36,7 +36,7 @@ const Input = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={`px-4 py-1 w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
+          className={`px-4 py-1 w-xs sm:w-xs w-lg rounded-md border-2 ${variantClasses[variant]} ${className}`}
         />
       )}
     </div>
